@@ -36,7 +36,7 @@
               })
             ];
           };
-          stdenv = pkgs.llvmPackages_19.stdenv;
+          stdenv = pkgs.llvmPackages_14.stdenv;
           #stdenv = pkgs.gcc12Stdenv;
           operon = import ./operon.nix { inherit stdenv pkgs system; };
         in
